@@ -12,7 +12,8 @@
 }
 
 .header__title{
-  font-family: "poppins-thin";
+  font-weight: 100;
+  font-style: normal;
   font-size: 50px;
 
   width: fit-content;

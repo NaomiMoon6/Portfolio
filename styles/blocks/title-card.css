@@ -4,7 +4,8 @@
 }
 
 .title-card__title{
-  font-family: "Poppins-Light";
+  font-weight: 300;
+  font-style: normal;
   font-size: 100px;
   margin: 150px 0;
 }

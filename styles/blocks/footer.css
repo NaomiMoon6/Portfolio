@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-family: "poppins-thin";
+  font-weight: 100;
+  font-style: normal;
 }
 
 .footer__name{
-  font-family: "poppins-light";
+  font-weight: 300;
+  font-style: normal;
   padding: 10px;
 }
 

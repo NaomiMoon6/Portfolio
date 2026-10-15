@@ -1,7 +1,10 @@
 .page {
   background-color: #0b0d19;
   color: #fff;
-  font-family: "poppins-regular";
+
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
 
   cursor: none;
 
