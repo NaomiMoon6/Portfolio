@@ -1,0 +1,35 @@
+.title-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-card__title{
+  font-family: "Poppins-Light";
+  font-size: 100px;
+  margin: 150px 0;
+}
+
+.title-card__column{
+  display: flex;
+}
+
+.title-card__column_left{
+  flex-direction: column;
+}
+
+.title-card__column_right{
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.title-card__box{
+  width: 350px;
+}
+
+.title-card__links{
+  display: flex;
+}
+
+.title-card__link{
+  padding: 10px;
+}
+

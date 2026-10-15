@@ -1,0 +1,14 @@
+@import url(base/reset.css);
+@import url(base/colors.css);
+
+@import url(base/fonts.css);
+
+@import url(blocks/page.css);
+@import url(blocks/header.css);
+@import url(blocks/main.css);
+@import url(blocks/footer.css);
+
+@import url(blocks/title-card.css);
+@import url(blocks/about.css);
+
+@import url(blocks/glassbox.css);

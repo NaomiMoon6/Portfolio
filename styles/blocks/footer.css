@@ -1,0 +1,27 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "poppins-thin";
+}
+
+.footer__name{
+  font-family: "poppins-light";
+  padding: 10px;
+}
+
+.footer__links{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: auto auto; 
+  gap: 10px;
+}
+
+.footer__link{
+  padding: 10px;
+}
+
+.footer__link_big{
+  grid-column: span 3; 
+  text-align: center;
+}
