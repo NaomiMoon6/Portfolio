@@ -95,7 +95,7 @@ const el = document.querySelector('.header__title'); // the element whose text c
 const THRESHOLD = 500;
 
 const TEXT_TOP = '⏾';
-const TEXT_SCROLLED = 'Naomi Marra';
+const TEXT_SCROLLED = '⏾ Naomi Marra';
 
 let pastPoint = false;
 

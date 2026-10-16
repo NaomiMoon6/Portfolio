@@ -12,11 +12,39 @@
 }
 
 .about__image{
-  width: 300px;
+  width: 350px;
   height: 400px;
   border-radius: 20px;
+  image-rendering: optimizeQuality;
+  object-fit: cover; 
 }
 
 .about__text{
   padding: 50px;
+}
+
+.about__title{
+  font-weight: 500;
+  font-size: 30px;
+
+  margin-bottom: 15px;
+}
+
+.about__paragraph{
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.about__caption{
+  font-weight: 100;
+  font-size: 13px;
+  color: #ffffffa0;
+  margin: 15px 0 0;
+}
+
+.about__image-box {
+  width: 450px !important;
+  display: flex;
+  flex-direction: column;
 }
