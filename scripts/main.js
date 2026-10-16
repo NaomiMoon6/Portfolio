@@ -25,7 +25,7 @@ svg.appendChild(frag);
 const glow = document.querySelector('.cursor-glow');
 
 window.addEventListener('mousemove', (e) => {
-  glow.style.transform = `translate(${e.clientX - 25}px, ${e.clientY - 25}px)`;
+  glow.style.transform = `translate(${e.clientX - 75}px, ${e.clientY - 75}px)`;
 });
 
 async function drawCat() {

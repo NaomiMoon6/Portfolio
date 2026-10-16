@@ -13,9 +13,7 @@
   padding: 10px;
 
   width: 100%;
-  height: 100%;
-
-  
+  height: 100%;  
 }
 
 .glass-button{
@@ -41,33 +39,56 @@
   height: 100%;
 
   cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.cat {
-  width: min(600px, 90vw);
-  position: relative;
-  z-index: 1; /* above the starfield */
+.glass-button:hover{
+  background: radial-gradient(71.86% 50% at 50% 0%,#8ca0ff,#6275d0),#0401151a;
+
+  transform: scale(1.2);
+}
+
+.glass-table {
+  background: radial-gradient(71.86% 50% at 50% 0%, #a87fff0a, #a87fff00), #0401151a;
+  backdrop-filter: blur(5px);
+  
+  height: 100%;
   margin: 0;
-  display: block;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  overflow: hidden; 
 }
 
-.cat svg {
-  display: block;
-  margin: 0;
-  width: 100%;
-  height: auto;
-}
-.cat .connect-line {
-  fill: none;
-  stroke: #8ca0ff;
-  stroke-width: 2;          /* in viewBox units; the SVG is 1280 wide */
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.glass-table__cell {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+
+  font-weight: 200;
 }
 
-@keyframes grow-pop {
-  0%   { transform: scale(1); transform-origin: left center;}
-  40%  { transform: scale(1.15); transform-origin: left center;}
-  100% { transform: scale(1); transform-origin: left center;}
+thead .glass-table__row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+thead .glass-table__cell {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-weight: 500;
+}
+
+tbody .glass-table__row + .glass-table__row .glass-table__cell {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-table__cell + .glass-table__cell {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 

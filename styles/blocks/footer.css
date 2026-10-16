@@ -21,9 +21,38 @@
 
 .footer__link{
   padding: 10px;
+
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.footer__link:hover{
+  a {
+    color: #8ca0ff;
+  }
+
+  transform: scale(1.1);
 }
 
 .footer__link_big{
   grid-column: span 3; 
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .footer{
+    font-size: 13px;
+    gap: 10px;
+
+    max-width: 350px !important;
+    margin: auto !important;
+  }
+
+  .footer__name{
+    padding: 5px;
+  }
+
+  .footer__links{
+    gap: 5px;
+  }
 }

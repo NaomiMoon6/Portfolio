@@ -46,11 +46,76 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(223, 209, 255, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 240, 245, 1) 1%, rgba(182, 158, 237, 0.1) 5%, rgba(167, 142, 227, 0.3) 5%, rgba(112, 81, 185, 0.1) 50%, transparent 70%);
   pointer-events: none; 
   z-index: 0;
   transform: translate(-100px, -100px);
+}
+
+.cat {
+  width: min(600px, 90vw);
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  display: block;
+}
+
+.cat svg {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.cat .connect-line {
+  fill: none;
+  stroke: #8ca0ff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@keyframes grow-pop {
+  0%   { transform: scale(1); transform-origin: left center;}
+  40%  { transform: scale(1.15); transform-origin: left center;}
+  100% { transform: scale(1); transform-origin: left center;}
+}
+
+.button-link{
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    padding: 170px 70px 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding: 100px 30px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 150px 30px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    padding: 150px 15px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    padding: 150px 10px 10px;
+  }
 }

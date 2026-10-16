@@ -32,5 +32,44 @@
 
 .title-card__link{
   padding: 10px;
+
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.title-card__link:hover{
+  a {
+    color: #8ca0ff;
+  }
+
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .title-card__title{
+    font-size: 70px;
+    margin: 130px 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title-card{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-card__title{
+    margin: 50px 0;
+  }
+
+  .title-card__column_right{
+   order: -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .title-card__title{
+    font-size: 50px;
+    margin: 50px 0;
+  }
+}
