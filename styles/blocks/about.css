@@ -37,7 +37,7 @@
 
   transform: scale(1.02);
 
-  cursor: not-allowed;
+  cursor: default;
   -webkit-user-drag: none;
 }
 

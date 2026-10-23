@@ -45,7 +45,7 @@
 }
 
 .glass-button:hover{
-  background: radial-gradient(71.86% 50% at 50% 0%,#8ca0ff,#6275d0),#0401151a;
+  background: radial-gradient(71.86% 50% at 50% 0%,#ae86f9ea,#7162d0),#0401151a;
 
   transform: scale(1.2);
 }
@@ -54,7 +54,6 @@
   background: radial-gradient(71.86% 50% at 50% 0%, #a87fff0a, #a87fff00), #0401151a;
   backdrop-filter: blur(5px);
   
-  height: 100%;
   margin: 0;
 
   border-collapse: separate;
